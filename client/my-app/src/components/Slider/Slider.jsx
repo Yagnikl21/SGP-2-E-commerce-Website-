@@ -17,9 +17,7 @@ const Slider = () => {
         setCurrentSlide(currentSlide === 2 ? 0 : (prev) => prev+1);
     };
 
-
     return (
-
         <div className="slider">
             <div className="container" style={{transform:`translateX(-${currentSlide*100}vw`}}>
                 <img src={data[0]} alt="" />
@@ -36,8 +34,6 @@ const Slider = () => {
                 </div>
             </div>
         </div>
-
-
     )
 }
 
